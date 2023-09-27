@@ -4,21 +4,29 @@
   <meta charset="UTF-8">
   <title>My little table</title>
   <style>
-    table, th, td {
-      border:1px solid darkmagenta;
+    .table-right {
+      border:8px solid seagreen;
+    }
+    .table-wrong {
+      border:8px solid darkmagenta;
+    }
+    th, td {
+      border:1px solid black;
     }
   </style>
 </head>
 <body>
-  <table>
+  <table class="table-wrong">
     <tr>
       <th>selector</th>
       <th>inline</th>
       <th>IDs</th>
       <th>classes</th>
+      <th>elements</th>
     </tr>
     <tr>
       <th>*</th>
+      <th>0</th>
       <th>0</th>
       <th>0</th>
       <th>0</th>
@@ -28,60 +36,145 @@
       <th>0</th>
       <th>0</th>
       <th>0</th>
+      <th>1</th>
     </tr>
     <tr>
       <th>.submit-button</th>
       <th>0</th>
       <th>0</th>
+      <th>1</th>
       <th>0</th>
     </tr>
     <tr>
       <th>#submit-button</th>
       <th>0</th>
+      <th>1</th>
       <th>0</th>
       <th>0</th>
     </tr>
     <tr>
       <th>#button-wrapper .submit-button</th>
       <th>0</th>
-      <th>0</th>
+      <th>1</th>
+      <th>1</th>
       <th>0</th>
     </tr>
     <tr>
       <th>#button-wrapper .submit-button:hover</th>
       <th>0</th>
-      <th>0</th>
+      <th>1</th>
+      <th>2</th>
       <th>0</th>
     </tr>
     <tr>
       <th>#submit-button</th>
       <th>0</th>
+      <th>1</th>
       <th>0</th>
       <th>0</th>
     </tr>
     <tr>
       <th>div#button-wrapper .submit-button[type="submit"]</th>
       <th>0</th>
-      <th>0</th>
-      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>1</th>
     </tr>
     <tr>
       <th>.submit-button.submit-button.submit-button</th>
       <th>0</th>
       <th>0</th>
+      <th>3</th>
       <th>0</th>
     </tr>
     <tr>
       <th>(button) style="color: red;">Click me!(/button)</th>
+      <th>1</th>
       <th>0</th>
       <th>0</th>
       <th>0</th>
     </tr>
-
   </table>
-
-
-
+  </br></br>
+  <table class="table-right">
+    <tr>
+      <th>selector</th>
+      <th>inline</th>
+      <th>IDs</th>
+      <th>classes</th>
+      <th>elements</th>
+    </tr>
+    <tr>
+      <th>*</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>button</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+      <th>1</th>
+    </tr>
+    <tr>
+      <th>.submit-button</th>
+      <th>0</th>
+      <th>0</th>
+      <th>1</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>#submit-button</th>
+      <th>0</th>
+      <th>1</th>
+      <th>0</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>#button-wrapper .submit-button</th>
+      <th>0</th>
+      <th>1</th>
+      <th>1</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>#button-wrapper .submit-button:hover</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>#submit-button</th>
+      <th>0</th>
+      <th>1</th>
+      <th>0</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>div#button-wrapper .submit-button[type="submit"]</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>1</th>
+    </tr>
+    <tr>
+      <th>.submit-button.submit-button.submit-button</th>
+      <th>0</th>
+      <th>0</th>
+      <th>3</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>(button) style="color: red;">Click me!(/button)</th>
+      <th>1</th>
+      <th>0</th>
+      <th>0</th>
+      <th>0</th>
+    </tr>
+  </table>
 
 
 </body>
